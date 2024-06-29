@@ -45,9 +45,12 @@ const App = () => {
     <TodoProvider value={{ todos, addTodo, deleteTodo, editTodo, checkTodo }}>
       <div className="bg-[#172842] min-h-screen py-8">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-          <h1 className="text-2xl font-bold text-center mb-8 mt-2">
-            Manage Your Todos
+         <span className=" w-full flex justify-center items-center relative">
+          <h1 className="text-4xl font-bold text-center mb-8 mt-2">
+            Manage Your Todos 
           </h1>
+            <img src="/icon.png" className="relative -top-4 -right-1 ml-4 h-12 w-12 hidden sm:inline-block"/>
+          </span>
           <div className="mb-4">
             <TodoForm />
           </div>
